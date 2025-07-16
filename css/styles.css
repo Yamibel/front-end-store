@@ -24,7 +24,7 @@ html {
 
 body {
   background-color: var(--primary-color);
-  font-size: 16rem;
+  font-size: 1.6rem;
   line-height: 1.5;
 }
 
@@ -39,7 +39,7 @@ a {
 }
 
 img {
-  width: 100%;
+  max-width: 100%;
 }
 
 .container {
@@ -47,7 +47,9 @@ img {
   margin: 0 auto;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   text-align: center;
   color: var(--secondary-color);
   font-family: var(--main-font);
@@ -63,4 +65,34 @@ h2 {
 
 h3 {
   font-size: 2.4rem;
+}
+
+/* Header */
+.header {
+  display: flex;
+  justify-content: center;
+}
+
+.header__logo {
+  margin: 3rem 0;
+}
+
+/* Navigation */
+.nav {
+  background-color: var(--primary-color-dark);
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.nav__link {
+  font-family: var(--main-font);
+  color: var(--white);
+  font-size: 3rem;
+}
+
+.nav__link--active,
+.nav__link:hover {
+  color: var(--secondary-color);
 }
