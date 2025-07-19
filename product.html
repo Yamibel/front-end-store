@@ -39,7 +39,7 @@
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam, consequatur, cumque dolor facere ipsa inventore quidem perspiciatis nam atque praesentium provident nulla laudantium illo! Dicta exercitationem laboriosam iure quaerat nihil.</p>
 
           <form class="form">
-            <select>
+            <select class="form__field">
               <option value="" disabled selected>Select Size</option>
               <option value="XS">Extra Small</option>
               <option value="S">Small</option>
@@ -47,8 +47,8 @@
               <option value="L">Large</option>
               <option value="XL">Extra Large</option>
             </select>
-            <input type="number" min="1" placeholder="Quantity" />
-            <input type="submit" value="Add to Cart">
+            <input class="form__field" type="number" min="1" max="10" placeholder="Quantity" />
+            <input class="form__submit" type="submit" value="Add to Cart" />
           </form>
         </div>
       </div>
